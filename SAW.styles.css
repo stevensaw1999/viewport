@@ -1,7 +1,26 @@
 /* Steven Saw */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 
 /* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
@@ -187,6 +206,7 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
+@media (max-width: 600px) {
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -212,13 +232,15 @@ img{
     img{
         width: 200px;
         max-width: 200px;
-    } */
+    } 
+}
 /* --------------- END SMALL SCREEN SIZES --------------- */
 
 
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
+@media (min-width: 601px) and (max-width: 1024px) {    
     header, footer{
         background-color: var(--black);
         color: var(--white);
@@ -244,8 +266,9 @@ img{
     #seven{
         grid-column: 3/4;
         grid-row: 3/5;
-    } */
-/* --------------- END MEDIUM SCREEN SIZES --------------- */
+    }
+}
+    /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
 
 
@@ -282,7 +305,7 @@ img{
 
     #seven, #eight{
         grid-row: 3/4;
-    } */
+    } 
 /* --------------- END LARGE SCREEN SIZES --------------- */
 
 
