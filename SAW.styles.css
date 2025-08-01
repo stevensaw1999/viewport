@@ -72,12 +72,6 @@ time, mark, audio, video {
 
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
 /* This will override the body background color set above */
-@media (prefers-color-scheme: dark) {
-    body{
-        background-color: var(--dark-gray);
-        color: var(--white);
-    }
-}
 
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
@@ -107,7 +101,7 @@ img{
 /* ----- ANIMATED ICON ----- */
 /* Icon and animation code from https://typogram.github.io/Anicons/ */
 .icon{
-    font-family: "Anicons Regular";
+    font-family: "Anicons Regular", sans-serif;
     font-size: 2em;
     display: inline-block;
     margin: 0 0.5em;
@@ -141,9 +135,6 @@ footer .icon{
 }
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
     @-webkit-keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; }
-    }
-    @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
@@ -307,7 +298,12 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-
+@media (min-width: 1025px) and (max-width: 1795px) {
+    img{
+        width: 300px;
+        max-width: 300px;
+    }  
+}
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
@@ -335,11 +331,7 @@ img{
     section{
         background-color: var(--blue-gray);
         color: var(--dark-gray);
-    }
-    img{
-        width: 300px;
-        max-width: 300px;
-    }  
+    } 
 
     #one, #two{
         grid-row: 1/3;
