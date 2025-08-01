@@ -307,12 +307,7 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-@media (min-width: 1796px) {
-    img{
-        width: 300px;
-        max-width: 300px;
-    }  
-}
+
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
@@ -321,7 +316,7 @@ img{
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
 @media (min-width: 1796px) {
     body{
-        background-color: var(--blue);
+        background-color: var(--white);
         color: var(--dark-gray);
     }
 
@@ -341,6 +336,10 @@ img{
         background-color: var(--blue-gray);
         color: var(--dark-gray);
     }
+    img{
+        width: 300px;
+        max-width: 300px;
+    }  
 
     #one, #two{
         grid-row: 1/3;
